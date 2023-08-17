@@ -1,65 +1,37 @@
-// script.js
+// // script.js
+// First Order
+const order1_biscuits = document.querySelector('[data-key="order1"] .biscuits .count')
+order1_biscuits.innerHTML = '10'
 
-let root_1 = document.querySelector('[data-key]')
-let biscuits_1 = document.querySelector('[data-biscuits]')
-let donuts_1 = document.querySelector('[data-donuts]')
-let pancakes_1 = document.querySelector('[data-pancakes]')
-let status_1 = document.querySelector('[data-status]')
+const order1_donuts = document.querySelector('[data-key="order1"] .donuts .count')
+order1_donuts.innerHTML = '13'
 
-let root_2 = document.querySelector('[data-key]')
-let biscuits_2 = document.querySelector('[data-biscuits]')
-let donuts_2 = document.querySelector('[data-donuts]')
-let pancakes_2 = document.querySelector('[data-pancakes]')
-let status_2 = document.querySelector('[data-status]')
+const order1_pancakes = document.querySelector('[data-key="order1"] .pancakes .count')
+order1_pancakes.innerHTML = '0'
 
-let root_3 = document.querySelector('[data-key]')
-let biscuits_3 = document.querySelector('[data-biscuits]')
-let donuts_3 = document.querySelector('[data-donuts]')
-let pancakes_3 = document.querySelector('[data-pancakes]')
-let status_3 = document.querySelector('[data-status]')
+const order1_status = document.querySelector('[data-key="order1"] .status ')
+order1_status.innerHTML = 'Pending'
+// Second Order
+const order2_biscuits = document.querySelector('[data-key="order2"] .biscuits .count')
+order2_biscuits.innerHTML = '10'
 
-const pending = 'Pending'
-const delivered = 'Delivered'
-root_1 = {
-    id: 'order1',
-    biscuits: 10,
-    donuts: 13,
-    pancakes: 0,
-    status: false,
-}
+const order2_donuts = document.querySelector('[data-key="order2"] .donuts .count')
+order2_donuts.innerHTML = '13'
 
-root_2 = {
-    id: 'order2',
-    biscuits: 5,
-    donuts: 0,
-    pancakes: 2,
-    status: false,
-}
+const order2_pancakes = document.querySelector('[data-key="order2"] .pancakes .count')
+order2_pancakes.innerHTML = '0'
 
-root_3 = {
-    id: 'order3',
-    biscuits: 12,
-    donuts: 11,
-    pancakes: 15,
-    status: true,
-}
+const order2_status = document.querySelector('[data-key="order2"] .status ')
+order2_status.innerHTML = 'Pending'
+// Third Order
+const order3_biscuits = document.querySelector('[data-key="order3"] .biscuits .count')
+order3_biscuits.innerHTML = '10'
 
-biscuits_1= root_1.biscuits
-donuts_1 = root_1.donuts
-pancakes_1 = root_1.pancakes
+const order3_donuts = document.querySelector('[data-key="order3"] .donuts .count')
+order3_donuts.innerHTML = '13'
 
-status_1 = root_1.status ? delivered : pending
+const order3_pancakes = document.querySelector('[data-key="order3"] .pancakes .count')
+order3_pancakes.innerHTML = '0'
 
-let con = document.querySelectorAll("count").innerHTML = status_1;
-
-biscuits_2 = root_2.biscuits
-donuts_2 = root_2.donuts
-pancakes_2 = root_2.pancakes
-
-status_2 = root_2.status ? delivered : pending
-
-biscuits_3 = root_3.biscuits
-donuts_3 = root_3.donuts
-pancakes_3 = root_3.pancakes
-
-status_3 = root_3.status ? delivered : pending
+const order3_status = document.querySelector('[data-key="order3"] .status ')
+order3_status.innerHTML = 'Delivered'
